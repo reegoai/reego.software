@@ -6,13 +6,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description"
-    content="A Software Development company with Freelance B2B contract agreement providing short-term, mid-term or long term supports.">
+    content="Reego Software — senior engineering for web, applications, and AI integrations. B2B contracts, clear ownership, AWS and Google Cloud.">
   <meta name="keywords"
-    content="Software Development, Web Development, Türkiye Software Development, Freelance Software Development, Contractor, C#, .NET, NodeJS, Python, Django, HTML, CSS, XML, JavaScript, Typescript, SQL, MSSQL, SQL SERVER, PostgreSQL, MongoDB">
+    content="Software development, web development, B2B contractor, .NET, Node.js, Python, React, AWS, Google Cloud, LLM integration, Türkiye">
   <meta name="author" content="Hasan YILMAZ">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('reego-theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) { /* ignore */ }
+    })();
+  </script>
   <link href="./assets/img/logo/logo.svg" rel="icon">
 
-  <title>REEGO</title>
+  <title>Reego Software — Engineering &amp; AI</title>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JB2M4X9EKH"></script>
@@ -61,7 +71,13 @@
             <span class="icon-menu"></span>
             <span class="icon-menu"></span>
           </button>
-          <a href="index.html" class="navbar-brand"><img src="assets/img/logo/logo.png" alt=""></a>
+          <a href="index.html" class="navbar-brand"><img class="site-logo" src="assets/img/logo/logo.png"
+              alt="Reego Software"></a>
+          <button type="button" class="theme-toggle theme-toggle--nav" id="theme-toggle"
+            aria-label="Switch to dark theme" title="Theme" aria-pressed="false">
+            <span class="theme-toggle-track" aria-hidden="true"></span>
+            <span class="theme-toggle-thumb" aria-hidden="true"></span>
+          </button>
         </div>
         <div class="collapse navbar-collapse" id="main-navbar">
           <ul class="navbar-nav mr-auto w-100 justify-content-left clearfix">
@@ -72,17 +88,22 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#services">
-                Services
+                Capabilities
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#feature">
-                feature
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#selected-works">
+                Works
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#testimonial">
-                Testimonial
+                References
               </a>
             </li>
             <li class="nav-item">
@@ -106,17 +127,32 @@
         </li>
         <li>
           <a class="page-scroll" href="#services">
-            Services
+            Capabilities
           </a>
         </li>
         <li>
           <a class="page-scroll" href="#feature">
-            feature
+            About
+          </a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#selected-works">
+            Works
+          </a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#testimonial">
+            References
           </a>
         </li>
         <li>
           <a class="page-scroll" href="#contact">
             Contact
+          </a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#faq">
+            FAQ
           </a>
         </li>
       </ul>
@@ -132,13 +168,15 @@
         <div class="row">
           <div class="col-md-12 col-sm-12">
             <div class="contents text-center">
-              <h2 class="head-title wow fadeInUp">Code without Borders.<br> Creativity beyond Limits.</h2>
+              <h2 class="head-title wow fadeInUp">Senior engineering for products<br>that need to ship and scale.</h2>
+              <p class="wow fadeInUp hero-tagline" data-wow-delay="0.15s">Web, applications, and AI integrations — B2B
+                engagements with clear handover and ownership.</p>
               <!-- <div class="header-button wow fadeInUp" data-wow-delay="0.3s">
                   <a href="#" class="btn btn-common">Download Now</a>
                 </div>-->
             </div>
             <div class="img-thumb text-center wow fadeInUp" data-wow-delay="0.6s">
-              <img class="img-fluid" src="assets/img/hero-1.png" alt="">
+              <img class="img-fluid" src="assets/img/hero-1.png" alt="" role="presentation">
             </div>
           </div>
         </div>
@@ -153,168 +191,71 @@
   <section id="services" class="section-padding">
     <div class="container">
       <div class="section-header text-center">
-        <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Our Services</h2>
+        <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">What we deliver</h2>
       </div>
       <div class="row">
-        <!-- Services item -->
-        <div class="col-md-6 col-lg-4 col-xs-12">
+        <div class="col-md-6 col-lg-6 col-xs-12">
           <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
             <div class="icon">
               <i class="lni-cog"></i>
             </div>
             <div class="services-content">
-              <h3><a href="#">Web Development</a></h3>
+              <h3><a href="#">Web engineering</a></h3>
               <p>
-                Elevate your digital presence with our cutting-edge web development services. We specialize in creating
-                robust, scalable, and high-performing web applications utilizing a versatile suite of technologies
-                including NodeJS, Django, React, Flask, FastAPI, Fastify, and C# .NET. From dynamic front-end interfaces
-                to secure and efficient back-end solutions, our team is equipped with the expertise to transform your
-                vision into reality. Partner with us to leverage the latest advancements in technology for a seamless
-                online experience, ensuring your business stands out in an increasingly competitive digital landscape.
+                Production-grade web applications: APIs, admin tools, and customer-facing products. Common stacks
+                include
+                Node.js, Python (Django, FastAPI), and C#/.NET on the server; React and modern TypeScript on the client.
+                Focus on security, performance, and maintainability—not buzzwords.
               </p>
             </div>
           </div>
         </div>
-        <!-- Services item -->
-        <div class="col-md-6 col-lg-4 col-xs-12">
-          <div class="services-item wow fadeInRight" data-wow-delay="1.5s">
+        <div class="col-md-6 col-lg-6 col-xs-12">
+          <div class="services-item wow fadeInRight" data-wow-delay="0.45s">
             <div class="icon">
               <i class="lni-mobile"></i>
             </div>
             <div class="services-content">
-              <h3><a href="#">App Development</a></h3>
+              <h3><a href="#">Applications &amp; integrations</a></h3>
               <p>
-                Unlock the full potential of your business with our comprehensive app development services. Specializing
-                in Web Apps, Desktop Apps, Mobile Apps, Web APIs, and Web Services, we are committed to transforming
-                your ideas into innovative digital solutions. Our team of skilled developers combines cutting-edge
-                technology with industry expertise to deliver fully customized applications tailored to your unique
-                needs. With a focus on performance and user experience, our solutions drive efficiency, enhance
-                engagement, and propel your business forward. Let us partner with you to turn your vision into reality
-                and build the future of your enterprise. </p>
-            </div>
-          </div>
-        </div>
-        <!-- Services item -->
-        <div class="col-md-6 col-lg-4 col-xs-12">
-          <div class="services-item wow fadeInRight" data-wow-delay="0.9s">
-            <div class="icon">
-              <i class="lni-briefcase"></i>
-            </div>
-            <div class="services-content">
-              <h3><a href="#">AI Enginnering</a></h3>
-              <p>
-              <ul>
-                <li> To discuss what you might automate within the AI era with the helps of LLMs. </li>
-                <li> To build tooling for your internal teams. </li>
-                <li> To add AI features to your existing products for your premium customers. </li>
-              </ul>
+                Web and desktop applications, internal tools, Slack and messaging integrations, and public APIs.
+                We work the way your team already works: your repos, your environments, and documentation that supports
+                handover.
               </p>
             </div>
           </div>
         </div>
-        <!-- Services item -->
-        <div class="col-md-6 col-lg-4 col-xs-12">
-          <div class="services-item wow fadeInRight" data-wow-delay="0.9s">
-            <div class="icon">
-              <i class="lni-briefcase"></i>
-            </div>
-            <div class="services-content">
-              <h3><a href="#">Prompt/Context Enginnering</a></h3>
-              <p>
-                From creating the best prompts and contexts that your app needs,
-                to optimizing them to get better results based on your needs.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Services item -->
-        <div class="col-md-6 col-lg-4 col-xs-12">
-          <div class="services-item wow fadeInRight" data-wow-delay="0.9s">
-            <div class="icon">
-              <i class="lni-briefcase"></i>
-            </div>
-            <div class="services-content">
-              <h3><a href="#">LLM Counselling</a></h3>
-              <p>
-                From determining the best tools for your team's prooductivity and needs,
-                to building apps based on LLM features such as;
-              <ul>
-                <li> Function Calling </li>
-                <li> Embeddings </li>
-                <li> Vector Databases </li>
-              </ul>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Services item -->
-        <div class="col-md-6 col-lg-4 col-xs-12">
-          <div class="services-item wow fadeInRight" data-wow-delay="1.8s">
+        <div class="col-md-6 col-lg-6 col-xs-12">
+          <div class="services-item wow fadeInRight" data-wow-delay="0.6s">
             <div class="icon">
               <i class="lni-layers"></i>
             </div>
             <div class="services-content">
-              <h3><a href="#">Digital Marketing</a></h3>
+              <h3><a href="#">AI &amp; LLM integration</a></h3>
               <p>
-                Unlock the potential of your brand with our comprehensive Digital Marketing solutions. Our expert
-                services span the essentials of modern marketing, including eye-catching banner design, impactful
-                flyers, targeted advertisements, and seamless SEO optimization. Let us drive your business forward by
-                enhancing your online presence and connecting you with your ideal audience. Trust us to deliver
-                innovative strategies that maximize your brand's visibility and growth in today's competitive market.
+                Practical use of large language models in real products: automation, copilots, and premium features for
+                customers.
               </p>
+              <ul class="service-bullets">
+                <li>Tooling and workflows for internal teams</li>
+                <li>Prompt and context design tuned to your domain</li>
+                <li>Function calling, embeddings, and retrieval (vector stores) where they add measurable value</li>
+              </ul>
             </div>
           </div>
         </div>
-        <!-- Services item -->
-        <div class="col-md-6 col-lg-4 col-xs-12">
-          <div class="services-item wow fadeInRight" data-wow-delay="0.9s">
-            <div class="icon">
-              <i class="lni-briefcase"></i>
-            </div>
-            <div class="services-content">
-              <h3><a href="#">Business Branding</a></h3>
-              <p>
-                Unlock your brand's potential with our cutting-edge SEO and indexing solutions. At Reego, we specialize
-                in enhancing your visibility on search engines, driving organic traffic, and boosting online presence.
-                Our expert team leverages the latest technologies and best practices to ensure your business stands out
-                in the digital landscape. Trust us to elevate your brand with strategic and results-driven SEO
-                improvements that put you ahead of the competition. Let us help you be found by those who matter most.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Services item -->
-        <div class="col-md-6 col-lg-4 col-xs-12">
-          <div class="services-item wow fadeInRight" data-wow-delay="1.2s">
-            <div class="icon">
-              <i class="lni-pencil-alt"></i>
-            </div>
-            <div class="services-content">
-              <h3><a href="#">Content Writing</a></h3>
-              <p>
-                Unlock the future of your industry with our bespoke content writing solutions. Specializing in key
-                sectors like Healthcare, eLearning, Insurance, Finance, our expertly crafted content not only engages
-                but informs and inspires your audience. Our team of professional writers leverages industry insights and
-                advanced methodologies to deliver clear, compelling, and compliant content that builds trust and drives
-                business growth. Let us transform your communication strategies into powerful narratives that resonate
-                with your target market and elevate your brand to new heights. </p>
-            </div>
-          </div>
-        </div>
-        <!-- Services item -->
-        <div class="col-md-6 col-lg-4 col-xs-12">
-          <div class="services-item wow fadeInRight" data-wow-delay="0.6s">
+        <div class="col-md-6 col-lg-6 col-xs-12">
+          <div class="services-item wow fadeInRight" data-wow-delay="0.75s">
             <div class="icon">
               <i class="lni-bar-chart"></i>
             </div>
             <div class="services-content">
-              <h3><a href="#">Graphic Design</a></h3>
+              <h3><a href="#">Cloud &amp; data platforms</a></h3>
               <p>
-                Transform your digital presence with our cutting-edge Graphic Design and UI/UX Development services. Our
-                expertise in React, Angular, CSS, and Bootstrap ensures your applications are not only visually stunning
-                but also highly functional and responsive. Leveraging these advanced technologies, we craft seamless,
-                engaging user experiences that elevate your brand identity and captivate your audience. Partner with us
-                to bring your vision to life with innovation and precision. </p>
+                AWS and Google Cloud: services your product already depends on, wired correctly the first time.
+                Experience with data pipelines, warehousing (e.g. BigQuery, Redshift), containers, and serverless where
+                appropriate.
+              </p>
             </div>
           </div>
         </div>
@@ -331,7 +272,7 @@
         <div class="col-lg-6 col-md-12 col-sm-12">
           <div class="text-wrapper">
             <div>
-              <h2 class="title-hl wow fadeInLeft" data-wow-delay="0.3s">Learn More About Us</h2>
+              <h2 class="title-hl wow fadeInLeft" data-wow-delay="0.3s">How we work with leadership teams</h2>
               <div class="row">
                 <div class="col-md-6 col-sm-6">
                   <div class="features-box wow fadeInLeft" data-wow-delay="0.3s">
@@ -340,11 +281,12 @@
                     </div>
                     <div class="features-content">
                       <h4>
-                        Expertise You Can Trust
+                        Depth you can verify
                       </h4>
                       <p>
-                        Our team is equipped with the latest technological insights and a track record of successful
-                        digital transformations.
+                        Senior engineers who have shipped in production—stack depth from backend through frontend and
+                        cloud,
+                        with references available on request.
                       </p>
                     </div>
                   </div>
@@ -356,11 +298,11 @@
                     </div>
                     <div class="features-content">
                       <h4>
-                        Tailored Solutions
+                        Scoped to your outcomes
                       </h4>
                       <p>
-                        We pride ourselves on offering customized IT and digital services that meet your unique business
-                        needs.
+                        Engagements are structured around milestones and clear deliverables—whether you need a focused
+                        build, integration work, or a longer-term extension of your team.
                       </p>
                     </div>
                   </div>
@@ -372,11 +314,11 @@
                     </div>
                     <div class="features-content">
                       <h4>
-                        Collaborative Approach
+                        Transparent collaboration
                       </h4>
                       <p>
-                        Our partnership-driven philosophy ensures that every project is a joint venture towards mutual
-                        success.
+                        We integrate with your tools and ceremonies: stand-ups, tickets, and code review—so progress
+                        is visible without overhead.
                       </p>
                     </div>
                   </div>
@@ -388,10 +330,12 @@
                     </div>
                     <div class="features-content">
                       <h4>
-                        Innovation at Its Best:
+                        Pragmatic technology choices
                       </h4>
                       <p>
-                        Stay ahead of the competition with cutting-edge technology and forward-thinking strategies.
+                        We recommend what fits your constraints: existing systems, compliance, budget, and
+                        time-to-market—
+                        not the trend of the week.
                       </p>
                     </div>
                   </div>
@@ -416,7 +360,7 @@
       <div class="row">
         <div class="col-12">
           <div class="section-header text-center">
-            <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Our Team</h2>
+            <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Leadership</h2>
           </div>
         </div>
       </div>
@@ -424,8 +368,8 @@
         <div class="col-sm-6 col-md-6 col-lg-4">
           <div class="team-item text-center">
             <div class="team-img">
-              <a href="http://www.hasanyilmaz.me" target="_blank">
-                <img class="img-fluid" src="assets/img/team/hasanyilmaz.jpg" alt="">
+              <a href="https://hasanyilmaz.me" target="_blank" rel="noopener noreferrer">
+                <img class="img-fluid" src="assets/img/team/hasanyilmaz.jpg" alt="Hasan YILMAZ">
               </a>
               <div class="team-overlay">
                 <div class="overlay-social-icon text-center">
@@ -444,28 +388,22 @@
             </div>
             <div class="info-text">
               <h3>Hasan YILMAZ</h3>
-              <p>Bachelor of Science, 2015 - Computer Engineering, METU</p>
-              <p>Senior Full-stack / Web Developer | ~9 years of professional experience.</p>
+              <p>Founder · Senior full-stack engineer · B.Sc. Computer Engineering, METU (2015)</p>
+              <p>~9 years building production systems for product companies; recent focus on data platforms, internal
+                tools,
+                Slack integrations, and LLM-backed features.</p>
               <p>
-                Visit:
-                <a target="_blank" href="./assets/doc/resume/HasanYilmazCV.pdf">Resume</a>
-                |
+                <a target="_blank" href="./assets/doc/resume/HasanYilmazCV.pdf">Résumé (PDF)</a>
+                ·
                 <a target="_blank" href="https://hasanyilmaz.co">Portfolio</a>
               </p>
-              <p>
-                Bio:
-              </p>
-              <ul>
-                <li>Graduated in 2015 from Middle East Technical University (ODTÜ).</li>
-                <li>The professional experiences initiated with Microsoft technologies such as C#/.NET and continued
-                  with open source and unix technologies such as Node.js on the backend and Python on Data Science.</li>
-                <li>Developed with Angular and React on the frontend.</li>
-                <li>Worked with both SQL e.g. MySQL, MSSQL, PostgreSQL and NoSQL databases e.g. MongoDB and Firebase.
-                </li>
-                <li>With respect to cloud technologies, worked with Google Cloud e.g. BigQuery and AWS such as S3, EKS,
-                  and ECS, AWS Lambda, Redshift.</li>
-                <li>Interested in and have experience with Docker, Kubernetes, and Git Workflows.</li>
-                <li>Have knowledge on Microservice architecture with Message Queues such as Kafka and RabbitMQ.</li>
+              <p><strong>Background</strong></p>
+              <ul class="solid-list">
+                <li>Backend: C#/.NET, Node.js, Python; SQL (PostgreSQL, MSSQL, MySQL) and document stores (MongoDB,
+                  Firebase).</li>
+                <li>Frontend: React, Angular, TypeScript.</li>
+                <li>Cloud &amp; data: AWS (S3, Lambda, EKS, ECS, Redshift) and Google Cloud (including BigQuery).</li>
+                <li>Platform: Docker, Kubernetes, Kafka, RabbitMQ; microservices and event-driven patterns.</li>
               </ul>
             </div>
           </div>
@@ -475,143 +413,178 @@
   </section>
   <!-- Team Section End -->
 
-  <!-- Clients Section Start -->
-  <div id="clients" class="section-padding">
+  <!-- Selected work (horizontal scroll + filters) -->
+  <div id="selected-works" class="section-padding selected-work">
     <div class="container">
       <div class="section-header text-center">
-        <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">As Seen On</h2>
+        <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Selected work</h2>
+        <p class="selected-work-lead wow fadeInDown" data-wow-delay="0.35s">Scroll sideways to browse. Use tags to
+          narrow the list.</p>
       </div>
-      <div class="row text-align-">
-        <div class="col-lg-4 col-md-4 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="client-item-wrapper">
-            <a class="img-fluid" href="./assets/img/projects/global-sales-and-customer-insights.png" target="_blank">
-              <span>Gb Sales & Custumoer Insights</span>
-              <img src="./assets/img/testimonial/slack1.png" alt="Slack App - BoltJS" /></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="client-item-wrapper">
-            <a class="img-fluid" href="./assets/img/projects/monitor-pro-subscription.png" target="_blank">
-              <span>Monitor Pro Subscriptions</span>
-              <img src="./assets/img/testimonial/slack2.png" alt="Slack App - BoltJS" /></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="client-item-wrapper">
-            <a class="img-fluid" href="https://www.toolcalling.ai">
-              <span>LLM Function Calling</span>
-              <img src="./assets/img/clients/react.png" alt="reactjs" /></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="client-item-wrapper">
-            <a class="img-fluid" href="https://rs-cx.github.io/json-schema-validator-app">
-              <span>Json schema <b>validator</b> for LLM FC</span>
-              <img src="./assets/img/clients/react.png" alt="reactjs" /></a>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="client-item-wrapper">
-            <a class="img-fluid" href="https://rs-cx.github.io/json-schema-generator-app">
-              <span>Json schema <b>generator</b> for LLM FC</span>
-              <img src="./assets/img/clients/react.png" alt="reactjs" /></a>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="client-item-wrapper">
-            <a class="img-fluid" href="https://www.toolaugmented.ai">
-              <span>LLM Tool Augmented Guide</span>
-              <img src="./assets/img/clients/react.png" alt="reactjs" /></a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="client-item-wrapper">
-            <a class="img-fluid" href="https://www.npmjs.com/package/custom-permutation">
-              <span>Custom Permutation</span>
-              <img src="./assets/img/clients/npm.png" alt="npmjs" /></a>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="client-item-wrapper">
-            <a class="img-fluid" href="https://pypi.org/project/prompt-llm/ai">
-              <span>Prompt LLM</span>
-              <img src="./assets/img/clients/pypi.svg" alt="pypi" /></a>
-            </a>
-          </div>
+      <div class="selected-work-toolbar wow fadeInUp" data-wow-delay="0.4s" role="region"
+        aria-label="Selected work filters">
+        <div class="selected-work-filters" role="group" aria-label="Filter by topic">
+          <button type="button" class="selected-work-filter is-active" data-filter="all"
+            aria-pressed="true">All</button>
+          <button type="button" class="selected-work-filter" data-filter="ai" aria-pressed="false">AI</button>
+          <button type="button" class="selected-work-filter" data-filter="llm" aria-pressed="false">LLM</button>
+          <button type="button" class="selected-work-filter" data-filter="web" aria-pressed="false">Web</button>
+          <button type="button" class="selected-work-filter" data-filter="data" aria-pressed="false">Data</button>
         </div>
       </div>
+      <div class="selected-work-scroller wow fadeInUp" data-wow-delay="0.45s" tabindex="0"
+        aria-label="Selected work projects — scroll horizontally">
+        <div class="selected-work-track" id="selected-work-track">
+          <article class="selected-work-card wow fadeInUp" data-tags="data web" data-wow-delay="0.3s">
+            <a class="selected-work-card-link" href="./assets/img/projects/global-sales-and-customer-insights.png"
+              target="_blank" rel="noopener noreferrer">
+              <div class="selected-work-card-thumb">
+                <img src="./assets/img/testimonial/slack1.png" alt="Slack app preview" width="100" height="100" />
+              </div>
+              <h3 class="selected-work-card-title">Global sales &amp; customer insights</h3>
+            </a>
+            <p class="selected-work-card-tags"><span class="work-tag">Data</span><span class="work-tag">Web</span></p>
+          </article>
+          <article class="selected-work-card wow fadeInUp" data-tags="data web" data-wow-delay="0.35s">
+            <a class="selected-work-card-link" href="./assets/img/projects/monitor-pro-subscription.png" target="_blank"
+              rel="noopener noreferrer">
+              <div class="selected-work-card-thumb">
+                <img src="./assets/img/testimonial/slack2.png" alt="Slack app preview" width="100" height="100" />
+              </div>
+              <h3 class="selected-work-card-title">Monitor Pro subscriptions</h3>
+            </a>
+            <p class="selected-work-card-tags"><span class="work-tag">Data</span><span class="work-tag">Web</span></p>
+          </article>
+          <article class="selected-work-card wow fadeInUp" data-tags="ai llm web" data-wow-delay="0.4s">
+            <a class="selected-work-card-link" href="https://www.toolcalling.ai" rel="noopener noreferrer">
+              <div class="selected-work-card-thumb">
+                <img src="./assets/img/clients/react.png" alt="Web app preview" width="100" height="100" />
+              </div>
+              <h3 class="selected-work-card-title">LLM function calling</h3>
+            </a>
+            <p class="selected-work-card-tags"><span class="work-tag">AI</span><span class="work-tag">LLM</span><span
+                class="work-tag">Web</span></p>
+          </article>
+          <article class="selected-work-card wow fadeInUp" data-tags="ai llm web" data-wow-delay="0.45s">
+            <a class="selected-work-card-link" href="https://rs-cx.github.io/json-schema-validator-app"
+              rel="noopener noreferrer">
+              <div class="selected-work-card-thumb">
+                <img src="./assets/img/clients/react.png" alt="Web app preview" width="100" height="100" />
+              </div>
+              <h3 class="selected-work-card-title">JSON Schema validator (LLM function calling)</h3>
+            </a>
+            <p class="selected-work-card-tags"><span class="work-tag">AI</span><span class="work-tag">LLM</span><span
+                class="work-tag">Web</span></p>
+          </article>
+          <article class="selected-work-card wow fadeInUp" data-tags="ai llm web" data-wow-delay="0.5s">
+            <a class="selected-work-card-link" href="https://rs-cx.github.io/json-schema-generator-app"
+              rel="noopener noreferrer">
+              <div class="selected-work-card-thumb">
+                <img src="./assets/img/clients/react.png" alt="Web app preview" width="100" height="100" />
+              </div>
+              <h3 class="selected-work-card-title">JSON Schema generator (LLM function calling)</h3>
+            </a>
+            <p class="selected-work-card-tags"><span class="work-tag">AI</span><span class="work-tag">LLM</span><span
+                class="work-tag">Web</span></p>
+          </article>
+          <article class="selected-work-card wow fadeInUp" data-tags="ai llm web" data-wow-delay="0.55s">
+            <a class="selected-work-card-link" href="https://www.toolaugmented.ai" rel="noopener noreferrer">
+              <div class="selected-work-card-thumb">
+                <img src="./assets/img/clients/react.png" alt="Web app preview" width="100" height="100" />
+              </div>
+              <h3 class="selected-work-card-title">Tool-augmented LLM guide</h3>
+            </a>
+            <p class="selected-work-card-tags"><span class="work-tag">AI</span><span class="work-tag">LLM</span><span
+                class="work-tag">Web</span></p>
+          </article>
+          <article class="selected-work-card wow fadeInUp" data-tags="web" data-wow-delay="0.6s">
+            <a class="selected-work-card-link" href="https://www.npmjs.com/package/custom-permutation"
+              rel="noopener noreferrer">
+              <div class="selected-work-card-thumb">
+                <img src="./assets/img/clients/npm.png" alt="npm" width="100" height="100" />
+              </div>
+              <h3 class="selected-work-card-title">custom-permutation (npm)</h3>
+            </a>
+            <p class="selected-work-card-tags"><span class="work-tag">Web</span></p>
+          </article>
+          <article class="selected-work-card wow fadeInUp" data-tags="ai llm" data-wow-delay="0.65s">
+            <a class="selected-work-card-link" href="https://pypi.org/project/prompt-llm/" rel="noopener noreferrer">
+              <div class="selected-work-card-thumb">
+                <img src="./assets/img/clients/pypi.svg" alt="PyPI" width="100" height="100" />
+              </div>
+              <h3 class="selected-work-card-title">prompt-llm (PyPI)</h3>
+            </a>
+            <p class="selected-work-card-tags"><span class="work-tag">AI</span><span class="work-tag">LLM</span></p>
+          </article>
+        </div>
+      </div>
+      <p class="selected-work-scroll-hint wow fadeIn" data-wow-delay="0.55s" aria-hidden="true">Swipe or drag the row to
+        see more</p>
     </div>
   </div>
-  <!-- Clients Section End -->
+  <!-- Selected work end -->
 
   <!-- Testimonial Section Start -->
   <section id="testimonial" class="testimonial section-padding">
     <div class="section-header text-center">
-      <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Thank you!</h2>
+      <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Client references</h2>
     </div>
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
-          <div id="testimonials" class="owl-carousel wow fadeInUp" data-wow-delay="1.2s">
+          <div id="testimonials" class="owl-carousel owl-theme wow fadeInUp" data-wow-delay="1.2s"
+            aria-label="Client references carousel">
             <div class="item">
               <div class="testimonial-item">
                 <div class="content">
-                  <p class="description">I wanted to THANK YOU for all your great work here.
-                    You've made a real difference, and your contributions have been highly valued by the team.
-                    We're especially grateful for your efforts in creating FastData, building the Monitor Pro tool for
-                    Hex cost reduction,
-                    and developing various Slack notification apps.
-                    We appreciate your commitment to ensuring a smooth handover of your responsibilities.
-                    On behalf of the entire team, I wish you the very best in your future endeavors and hope our paths
-                    cross again.
-                    Regards,
-                  </p>
+                  <p class="description">I wanted to thank you for your excellent work here. You made a real difference,
+                    and the team valued your contributions—especially FastData, the Monitor Pro initiative for Hex cost
+                    reduction, and the Slack notification apps. We also appreciated your commitment to a smooth
+                    handover. On behalf of the team, I wish you the very best and hope our paths cross again.</p>
                 </div>
                 <div class="img-thumb">
-                  <a href="./assets/img/testimonial/thanks-from-aircall.png" target="_blank">
-                    <img src="assets/img/clients/aircall-slack.png" alt="" />
-                </div>
-                <div class="info">
-                  <h2><a href="#">Chenxi Li, Head of DS</a></h2>
-                  <h3><a href="https://www.aircall.io">Aircall</a></h3>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonial-item">
-                <div class="content">
-                  <p class="description">We developed a Slack application optimizing the
-                    internal cost for Aircall that saved $80K only from Hex. The slack notifications
-                    for data representatiton purposes have been helping the customer to proactively reach out
-                    their customers real-time based on their action for cutting-edge solutions. </p>
-                </div>
-                <div class="img-thumb">
-                  <img src="assets/img/clients/aircall-slack.png" alt="" />
-                </div>
-                <div class="info">
-                  <h2><a href="http://www.hasanyilmaz.me">Hasan YILMAZ, Founder</a></h2>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonial-item">
-                <div class="content">
-                  <p class="description">You have had such a huge impact at Aircall.
-                    Good luck for whatever comes next, and thank you for all your contributions.
-                    I would be happy to have you on my team to help with our AI initiatives.
-                  </p>
-                </div>
-                <div class="img-thumb">
-                  <a href="./assets/img/testimonial/thanks-from-aircall.png" target="_blank">
-                    <img src="assets/img/clients/aircall-slack.png" alt="" />
+                  <a href="./assets/img/testimonial/thanks-from-aircall.png" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/img/clients/aircall-slack.png" alt="Aircall" />
                   </a>
                 </div>
                 <div class="info">
-                  <h2><a href="#">Sugandha Arora, Head of DE</a></h2>
-                  <h3><a href="https://www.aircall.io">Aircall</a></h3>
+                  <h2>Chenxi Li</h2>
+                  <h3><a href="https://www.aircall.io" rel="noopener noreferrer">Aircall</a> — Head of Data Science</h3>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonial-item">
+                <div class="content">
+                  <p class="description">We shipped a Slack application that reduced internal Hex spend by roughly $80K
+                    and built notification flows so teams could act on customer data in near real time—supporting
+                    proactive outreach and operational efficiency.</p>
+                </div>
+                <div class="img-thumb">
+                  <img src="assets/img/clients/aircall-slack.png" alt="Aircall" />
+                </div>
+                <div class="info">
+                  <h2>Hasan YILMAZ</h2>
+                  <h3>Founder, Reego Software</h3>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimonial-item">
+                <div class="content">
+                  <p class="description">You have had a huge impact at Aircall. Good luck with what comes next, and
+                    thank you for your contributions. I would be glad to have you on my team again for our AI
+                    initiatives.</p>
+                </div>
+                <div class="img-thumb">
+                  <a href="./assets/img/testimonial/thanks-from-aircall.png" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/img/clients/aircall-slack.png" alt="Aircall" />
+                  </a>
+                </div>
+                <div class="info">
+                  <h2>Sugandha Arora</h2>
+                  <h3><a href="https://www.aircall.io" rel="noopener noreferrer">Aircall</a> — Head of Data Engineering
+                  </h3>
                 </div>
               </div>
             </div>
@@ -652,32 +625,17 @@
   <!-- Owl Slider Section Start -->
   <section class="sloder-img section-padding">
     <div class="section-header text-center">
-      <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Customers</h2>
+      <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Companies we have worked with</h2>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div class="slider-center slider">
             <div>
-              <img class="img-fluid" src="assets/img/clients/aircall.png" alt="">
+              <img class="img-fluid" src="assets/img/clients/aircall.png" alt="Aircall logo">
             </div>
             <div>
-              <img class="img-fluid" src="assets/img/clients/turing.png" alt="">
-            </div>
-            <div>
-              <img class="img-fluid" src="assets/img/slide/img1.jpg" alt="">
-            </div>
-            <div>
-              <img class="img-fluid" src="assets/img/slide/img2.jpg" alt="">
-            </div>
-            <div>
-              <img class="img-fluid" src="assets/img/slide/img3.jpg" alt="">
-            </div>
-            <div>
-              <img class="img-fluid" src="assets/img/slide/img4.jpg" alt="">
-            </div>
-            <div>
-              <img class="img-fluid" src="assets/img/slide/img5.jpg" alt="">
+              <img class="img-fluid" src="assets/img/clients/turing.png" alt="Turing logo">
             </div>
           </div>
         </div>
@@ -707,33 +665,49 @@
   </section> -->
   <!-- Subscribe Section End -->
   <!-- Contact Section Start -->
-  <section id="contact" class="section-padding">
+  <section id="contact" class="contact-area section-padding">
     <div class="container wow fadeIn animated" style="visibility: visible;">
-      <h2 class="section-title">Looking forward to hearing from you</h2>
-      <div class="row center-content">
-        <div class="column">
-          <div style="text-align: center;">
-            <h6>Partner with us for exceptional IT and Digital Solutions</h6>
-          </div>
-          <div class="row margin-bottom" style="justify-content: space-evenly;">
-            <div class="padding-all">
-              <a href="mailto:reego.software@gmail.com" target="_blank" class="btn btn-common btn-lg">Email Now</a>
+      <div class="section-header text-center">
+        <h2 class="section-title">Start a conversation</h2>
+        <p class="contact-lead">Share a short brief: stack, timeline, and what &ldquo;done&rdquo; looks like. We
+          typically reply within one business day.</p>
+      </div>
+      <div class="row contact-grid justify-content-center align-items-stretch">
+        <div class="col-12 col-lg-5 mb-4 mb-lg-0">
+          <div class="contact-card">
+            <h3 class="contact-card-title">How to reach us</h3>
+            <p class="contact-card-text">Pick the channel you prefer. A few lines of context help us respond with the
+              right next step.</p>
+            <div class="contact-cta-row">
+              <a href="mailto:reego.software@gmail.com" target="_blank" rel="noopener noreferrer"
+                class="contact-cta contact-cta-primary btn btn-common btn-lg">
+                <i class="lni-envelope" aria-hidden="true"></i>
+                <span class="contact-cta-label"><span class="contact-cta-name">Email</span><span
+                    class="contact-cta-hint">Best for written briefs</span></span>
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=+905556907419&amp;text=Hello%20Reego%20Software"
+                class="contact-cta contact-cta-secondary btn btn-border btn-lg" rel="noopener noreferrer">
+                <i class="lni-phone-handset" aria-hidden="true"></i>
+                <span class="contact-cta-label"><span class="contact-cta-name">WhatsApp</span><span
+                    class="contact-cta-hint">Fast back-and-forth</span></span>
+              </a>
             </div>
-            <div class="padding-all">
-              <a href="https://api.whatsapp.com/send?phone=+905556907419&text=Hello Reego Software!"
-                class="btn btn-common btn-lg">Whatsapp</a>
+            <ul class="contact-pills">
+              <li><span class="contact-pill">Senior execution</span></li>
+              <li><span class="contact-pill">Clear scope &amp; handover</span></li>
+              <li><span class="contact-pill">AWS &amp; Google Cloud</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7">
+          <div class="contact-map-card">
+            <div class="contact-map-head">
+              <span class="contact-map-title">Office</span>
+              <span class="contact-map-sub">Kadıköy, Istanbul</span>
             </div>
-          </div>
-          <div class="row padding-bottom" style="justify-content: space-around;">
-            <span>Expertise</span>
-            <span>Tailored Solutions</span>
-            <span>Collaborative approach</span>
-            <span>Innovation at its best</span>
-          </div>
-          <div>
-            <iframe
+            <iframe class="contact-map" title="Reego Software office location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.452521866898!2d29.037783991310793!3d40.97157089749864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab883d1ec8f2b%3A0x53ac501b46afa1da!2zRmVuZXJiYWjDp2UsIEnEn3LEsXAgU2suIE5vOiAxM0EgRDoxLCAzNDcyNiBLYWTEsWvDtnkvxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1777205128328!5m2!1str!2str"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              width="600" height="420" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
@@ -743,47 +717,108 @@
   <!-- Contact Section End -->
 
   <!-- FAQ Section Start -->
-  <section id="faq" class="section-padding">
-    <h2 class="section-title">Frequently Asked Questions</h2>
-
-    <button class="accordion"> Which cloud services could you support? </button>
-    <div class="accordion-panel">
-      <p>
-        For now, only AWS and Google Cloud.
-      </p>
+  <section id="faq" class="faq-area section-padding">
+    <div class="section-header text-center">
+      <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Frequently Asked Questions</h2>
+      <p class="faq-lead wow fadeInUp" data-wow-delay="0.4s">Straight answers on how we work, deliver, and bill—no fine
+        print gymnastics.</p>
     </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9 col-md-11">
+          <div class="faq-list wow fadeInUp" data-wow-delay="0.5s">
+            <div class="faq-item">
+              <button type="button" class="accordion" id="faq-btn-1" aria-expanded="false"
+                aria-controls="faq-panel-1">What technologies and clouds do you work with?</button>
+              <div id="faq-panel-1" class="accordion-panel" role="region" aria-labelledby="faq-btn-1">
+                <div class="accordion-panel-inner">
+                  <p>We ship production systems across common B2B stacks—for example C#/.NET, Node.js, and Python;
+                    React, Angular, and TypeScript; SQL and document databases; Docker and Kubernetes; messaging
+                    (e.g. Kafka, RabbitMQ). On cloud we work primarily on <strong>AWS</strong> and <strong>Google
+                      Cloud</strong>, including data platforms such as BigQuery and Redshift where your product needs
+                    them.</p>
+                </div>
+              </div>
+            </div>
 
-    <button class="accordion"> Do you have own development environment or use ours? </button>
-    <div class="accordion-panel">
-      <p>
-        It depends on the development and contract type, but mostly we prefer working on your own services
-        to integrate easily with the other services that might depend on.
-      </p>
-    </div>
+            <div class="faq-item">
+              <button type="button" class="accordion" id="faq-btn-2" aria-expanded="false"
+                aria-controls="faq-panel-2">How do engagements usually start—fixed scope, retainer, or time and
+                materials?</button>
+              <div id="faq-panel-2" class="accordion-panel" role="region" aria-labelledby="faq-btn-2">
+                <div class="accordion-panel-inner">
+                  <p>Most work is defined in a statement of work: clear outcomes, milestones, or a bounded phase of
+                    delivery. Structure follows the problem—whether that is milestone-based delivery, a short discovery
+                    followed by build, or time and materials with a capped budget. We align on cadence, access, and
+                    acceptance criteria before writing code.</p>
+                </div>
+              </div>
+            </div>
 
-    <button class="accordion"> Do you take the ownnership of the code after development? </button>
-    <div class="accordion-panel">
-      <p>
-        It depends on the contract type, but mostly we deliver all the codebase without taking the ownership.
-      </p>
-    </div>
+            <div class="faq-item">
+              <button type="button" class="accordion" id="faq-btn-3" aria-expanded="false"
+                aria-controls="faq-panel-3">Do you use your own development environment or ours?</button>
+              <div id="faq-panel-3" class="accordion-panel" role="region" aria-labelledby="faq-btn-3">
+                <div class="accordion-panel-inner">
+                  <p>Most often we work in <strong>your</strong> accounts and tools—Git hosting, CI, ticketing, and
+                    chat—so
+                    access, security, and integrations match how your team already operates. If a greenfield prototype
+                    is faster in an isolated space first, we can agree that up front and then transfer cleanly into your
+                    org.</p>
+                </div>
+              </div>
+            </div>
 
-    <button class="accordion"> How frequently would you increase the rates? </button>
-    <div class="accordion-panel">
-      <p>
-        The rates might increase on average inflation of the countries that we operate in.
-        To speak in general, if the contract duration is less than a year, on each contract renew - we prefer
-        negotiating;
-        otherwise we could revisit it yearly.
-      </p>
-    </div>
+            <div class="faq-item">
+              <button type="button" class="accordion" id="faq-btn-4" aria-expanded="false"
+                aria-controls="faq-panel-4">Who owns the code and IP after delivery?</button>
+              <div id="faq-panel-4" class="accordion-panel" role="region" aria-labelledby="faq-btn-4">
+                <div class="accordion-panel-inner">
+                  <p>Exact assignment is spelled out in the contract. In typical B2B engagements you receive the
+                    codebase and rights you need to run and extend the product; we do not hold back a separate “vendor
+                    copy” or claim ongoing ownership of your product IP.</p>
+                </div>
+              </div>
+            </div>
 
-    <button class="accordion"> In which method we could we pay for your development services? </button>
-    <div class="accordion-panel">
-      <p>
-        We accept SWIFT via local bank account, or international methods such as WISE.
-        Moreover, we accept the payments by cyrptocurrency on well-known networks.
-      </p>
+            <div class="faq-item">
+              <button type="button" class="accordion" id="faq-btn-5" aria-expanded="false"
+                aria-controls="faq-panel-5">Can we use our NDA, vendor onboarding, and security policies?</button>
+              <div id="faq-panel-5" class="accordion-panel" role="region" aria-labelledby="faq-btn-5">
+                <div class="accordion-panel-inner">
+                  <p>Yes. NDAs, background checks, acceptable-use rules, and your infosec checklist are normal when we
+                    embed in your environment. Tell us what your legal and security teams require early so paperwork
+                    does not block the technical start.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="accordion" id="faq-btn-6" aria-expanded="false"
+                aria-controls="faq-panel-6">Where are you based, and how do you collaborate across time zones?</button>
+              <div id="faq-panel-6" class="accordion-panel" role="region" aria-labelledby="faq-btn-6">
+                <div class="accordion-panel-inner">
+                  <p>Reego Software is headquartered in <strong>Türkiye</strong>. For distributed clients we agree a
+                    predictable overlap window (reviews, pairing, releases) and use async updates the rest of the time
+                    so decisions are not blocked by the clock.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="accordion" id="faq-btn-7" aria-expanded="false"
+                aria-controls="faq-panel-7">Which payment methods do you accept?</button>
+              <div id="faq-panel-7" class="accordion-panel" role="region" aria-labelledby="faq-btn-7">
+                <div class="accordion-panel-inner">
+                  <p>SWIFT to a local bank account and Wise are the usual rails. Where it makes sense for both parties,
+                    we can discuss other settlement options—including, when explicitly agreed, cryptocurrency on major
+                    networks.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- FAQ Section End -->
@@ -791,40 +826,19 @@
   <!-- Footer Section Start -->
   <footer id="footer" class="footer-area section-padding">
     <div class="container">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="footer-logo mb-3">
-              <img src="assets/img/logo/logo.png" alt="">
-            </div>
-            <p>Let us be your strategic partner in driving growth and maximizing efficiency in your IT and digital
-              ventures.</p>
-          </div>
-          <!-- <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
-            <h3 class="footer-titel">Company</h3>
-            <ul>
-              <li><a href="#">Press Releases</a></li>
-              <li><a href="#">Mission</a></li>
-              <li><a href="#">Strategy</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
-            <h3 class="footer-titel">About</h3>
-            <ul>
-              <li><a href="#">Career</a></li>
-              <li><a class="page-scroll" href="#team">Team</a></li>
-              <li><a class="page-scroll" href="#clients">Clients</a></li>
-            </ul>
-          </div> -->
-          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="0.8s">
-            <h3 class="footer-titel">Find us on</h3>
-            <div class="social-icon">
-              <a class="twitter" target="_blank" href="https://x.com/ReegoSoftware"><i
-                  class="lni-twitter-filled"></i></a>
-              <a class="linkedin" target="_blank" href="https://www.linkedin.com/company/reego-software"><i
-                  class="lni-linkedin-filled"></i></a>
-            </div>
-          </div>
+      <div class="footer-inner text-center wow fadeInUp" data-wow-delay="0.15s">
+        <a href="index.html" class="footer-logo-link">
+          <img class="site-logo site-logo--footer" src="assets/img/logo/logo.png" alt="Reego Software">
+        </a>
+        <p class="footer-tagline">Senior engineering for teams that need delivery without noise—clear scope, direct
+          communication, and ownership through handover.</p>
+        <p class="footer-connect-label">Find us on</p>
+        <div class="social-icon footer-social">
+          <a class="twitter" target="_blank" rel="noopener noreferrer" href="https://x.com/ReegoSoftware"
+            aria-label="Reego Software on X"><i class="lni-twitter-filled"></i></a>
+          <a class="linkedin" target="_blank" rel="noopener noreferrer"
+            href="https://www.linkedin.com/company/reego-software" aria-label="Reego Software on LinkedIn"><i
+              class="lni-linkedin-filled"></i></a>
         </div>
       </div>
     </div>
@@ -835,7 +849,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <p>Copyright © 2024 Reego Software All Right Reserved</p>
+          <p>Copyright © 2026 Reego Software. All rights reserved.</p>
         </div>
       </div>
     </div>
