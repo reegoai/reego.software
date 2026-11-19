@@ -2741,3 +2741,28 @@ html[data-theme="dark"] .more-products-list strong {
 html[data-theme="dark"] .product-lead a {
   color: #6eb6ff;
 }
+
+/* Partners */
+.partners-area {
+  background: #f7f9fc;
+}
+
+.partners-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.partners-list li {
+  margin-bottom: 0;
+}
+
+.partners-list a {
+  height: 100%;
+  align-items: flex-start;
+}
+
+html[data-theme="dark"] .partners-area {
+  background: #12151a;
+}
