@@ -1,0 +1,89 @@
+/* Legal pages (terms, refunds, privacy). Same fonts and blue as main.css; dark theme follows the toggle on the home page. */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700");
+
+:root {
+  --bg: #ffffff;
+  --surface: #f7f9fc;
+  --text: #4b5058;
+  --heading: #1f2937;
+  --muted: #6b7280;
+  --line: #e3e8ef;
+  --link: #137ED9;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0f1114;
+  --surface: #161a22;
+  --text: #b4b9c2;
+  --heading: #eef0f4;
+  --muted: #9aa3b0;
+  --line: #2c3340;
+  --link: #6eb6ff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+a { color: var(--link); }
+
+.legal-header,
+.legal-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  padding: 16px max(16px, calc((100% - 860px) / 2));
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+
+.legal-header img { display: block; height: 40px; width: auto; }
+
+.legal-header nav,
+.legal-footer nav { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+
+.legal-header nav a,
+.legal-footer nav a { text-decoration: none; font-weight: 500; }
+
+.legal {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 32px 16px 56px;
+}
+
+.legal-crumb { font-size: 13px; color: var(--muted); margin: 0 0 8px; }
+.legal-crumb a { text-decoration: none; }
+
+.legal h1 { color: var(--heading); font-size: 34px; line-height: 1.25; margin: 0 0 6px; }
+.legal h2 { color: var(--heading); font-size: 21px; line-height: 1.35; margin: 36px 0 10px; }
+.legal-updated { color: var(--muted); font-size: 14px; margin: 0 0 28px; }
+.legal p, .legal li { overflow-wrap: anywhere; }
+.legal ul { padding-left: 22px; }
+.legal li { margin-bottom: 6px; }
+.legal strong { color: var(--heading); }
+
+.legal-footer {
+  border-top: 1px solid var(--line);
+  border-bottom: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.legal-footer p { margin: 0; }
+
+@media (max-width: 600px) {
+  .legal h1 { font-size: 27px; }
+}
